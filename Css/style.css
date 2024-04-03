@@ -1,0 +1,131 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-weight: 800; */
+}
+
+header .nav {
+    background-color: #1E202B;
+}
+
+header .nav a {
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 5px 30px;
+    color: white;
+    transition: 400ms all;
+}
+
+
+header .nav li:hover a {
+    color: #009AD8;
+    border: #009AD8 solid 2px;
+}
+
+header .part2 {
+    background-image: url(../imgs/banner.png);
+    background-size: 100% 100%;
+}
+
+.my-container .search::placeholder {
+    color: white;
+    opacity: 50%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.my-container button {
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    width: 110px;
+}
+
+.content-card .today-temp {
+    font-size: 90px;
+    font-weight: 600;
+}
+.content-card .today-temp, .temp {
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.num #img {
+    width: 100px;
+}
+
+.first-card,
+.third-card {
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    background-color: #323544;
+    overflow: hidden;
+}
+
+.second-card {
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    background-color: #262936;
+    overflow: hidden;
+}
+
+.second-card .nav-card {
+    background-color: #262936;
+    border-bottom: 1px solid #323544;
+
+}
+
+.nav-card,
+footer {
+    background-color: #2D303D;
+}
+
+.second-card .num #img {
+    width: 50px;
+}
+
+.third-card .num #img {
+    width: 50px;
+}
+
+.second-card .num .next-max-temp {
+    font-size: 20px;
+}
+
+.third-card .num .next-max-temp {
+    font-size: 20px;
+}
+
+.first-card,
+.second-card,
+.third-card,
+.content-card {
+    height: 350px;
+}
+
+footer .content button {
+    top: 0;
+    right: 0px;
+    bottom: 0;
+}
+
+footer .content .search::placeholder {
+    color: white;
+    opacity: 50%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.icon-links ul li a {
+    background-color: #1E202B;
+    padding: 12px 15px;
+    border-radius: 50%;
+    color: #009AD8;
+    cursor: pointer;
+    width: 16px;
+    transition: 400ms;
+}
+.icon-links ul li a:hover{
+    background-color: #0099D7;
+    color: white;
+}
+

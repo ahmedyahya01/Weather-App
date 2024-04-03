@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body data-bs-spy="scroll">
+
+    <header>
+        <div class="nav">
+            <nav data-bs-target="#navId" class="navbar navbar-expand-lg p-4 w-100 text-white">
+                <div class="container-fluid">
+                    <div class="container d-flex justify-content-between align-items-center">
+                        <div class="logo w-25 d-flex align-items-center">
+                            <img class="w-25 me-2" src="imgs/cloud-rain-weather-icon-25.png" alt="">
+                            <span class="h5">Weather</span>
+                        </div>
+                        <div class="links">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item px-lg-4">
+                                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item px-lg-4">
+                                        <a class="nav-link" href="#">News</a>
+                                    </li>
+                                    <li class="nav-item px-lg-4">
+                                        <a class="nav-link" href="#">Live Camera</a>
+                                    </li>
+                                    <li class="nav-item px-lg-4">
+                                        <a class="nav-link" href="#">Photos</a>
+                                    </li>
+                                    <li class="nav-item px-lg-4">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid part2 py-5">
+            <div class="container my-container">
+                <div class="row">
+                    <div class="col-sm-12 position-relative d-flex">
+                        <input id="search" type="text" class="form-control rounded-5 text-white bg-dark py-2 search"
+                            placeholder="Find Your Location...">
+                        <button class="btn btn-primary px-4 py-2 rounded-5 position-absolute">Find</button>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="first-card text-white mt-5">
+                            <div class="nav-card d-flex justify-content-between align-items-center py-2 px-2">
+                                <span class="today-date-day-name" id="today-date-day-name">Saturday</span>
+                                <span>
+                                    <span id="today-date-day-number" class="today-date-day-number">30</span>
+                                    <span id="today-date-day-month" class="today-date-day-month">may</span>
+                                </span>
+                            </div>
+                            <div class="content-card py-4 px-3">
+                                <div class="num">
+                                    <p id="today-location" class="fs-4 mb-1">cairo</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex">
+                                            <span id="today-temp" class="today-temp"></span>
+                                            <span id="temp" class="temp"><sup>o</sup>C</span>
+                                        </div>
+                                        <img id="img" class="ms-5" src="imgs/sun.webp"
+                                            alt="">
+                                    </div>
+                                    <div id="today-condition-text" class="custom mb-3 text-primary">Sunny</div>
+                                    <img class="me-1" src="imgs/icon-umberella.png" alt="">
+                                    <span id="humidity" class="me-4"></span>
+                                    <img class="me-1" src="imgs/icon-wind.png" alt="">
+                                    <span id="wind"></span>
+                                    <span class="me-4">km/h</span>
+                                    <img class="me-1" src="imgs/icon-compass.png" alt="">
+                                    <span id="wind-direction" class="me-4"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="second-card text-white mt-5">
+                            <div class="nav-card d-flex justify-content-center align-items-center py-2 px-2">
+                                <span class="next-day-name">Saturday</span>
+                            </div>
+                            <div class="content-card py-4 px-3">
+                                <div class="num py-5">
+                                    <div class="d-flex align-items-center justify-content-between flex-column">
+                                        <img class="next-condition-img" id="img" src="imgs/sun.webp" alt="">
+                                        <p class="next-max-temp">22.9<sup>o</sup>C</p>
+                                        <span class="next-min-temp">14.5 <sup>o</sup></span>
+                                    </div>
+                                    <div
+                                        class="next-condition-text mb-3 text-primary d-flex align-items-center justify-content-between flex-column mb-5">
+                                        Sunny</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="third-card text-white mt-5">
+                            <div class="nav-card d-flex justify-content-center align-items-center py-2 px-2">
+                                <span class="next-day-name">Saturday</span>
+                            </div>
+                            <div class="content-card py-4 px-3">
+                                <div class="num py-5">
+                                    <div class="d-flex align-items-center justify-content-between flex-column">
+                                        <img class="next-condition-img" id="img" src="imgs/sun.webp" alt="">
+                                        <p class="next-max-temp">22.9<sup>o</sup>C</p>
+                                        <span class="next-min-temp">14.5 <sup>o</sup></span>
+                                    </div>
+                                    <div
+                                        class="next-condition-text mb-3 text-primary d-flex align-items-center justify-content-between flex-column mb-5">
+                                        Sunny</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content">
+                        <div class="col-sm-12 position-relative mb-4">
+                            <input id="find-location" type="text"
+                                class="form-control p-1 rounded-5 text-white bg-dark p-2 search"
+                                placeholder="Enter Your Email To Subscribe...">
+                            <button class="btn btn-primary px-4 py-1 rounded-5 position-absolute">Subscribe</button>
+                        </div>
+                        <p class="text-light fw-light">Copyright 2014 Company name. Designed by Themezy. All rights
+                            reserved</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="icon-links">
+                        <ul class="list-unstyled d-flex justify-content-center align-items-center mt-3">
+                            <li class="pe-3">
+                                <a href=""> <i class="fa-brands fa-facebook-f"></i> </a>
+                            </li>
+                            <li class="pe-3">
+                                <a href=""> <i class="fa-brands fa-twitter"></i> </a>
+                            </li>
+                            <li class="pe-3">
+                                <a href=""> <i class="fa-brands fa-google"></i> </a>
+                            </li>
+                            <li class="pe-3">
+                                <a href=""> <i class="fa-brands fa-github"></i> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./Js/all.min.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+
+</html>
