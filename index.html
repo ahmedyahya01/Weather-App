@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container-fluid container-md">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.png" class="me-3 img-fluid" alt="">
+                <div class="text-white">
+                    <h1 class="">Weather</h1>
+                </div>
+            </a>
+            <i class="navbar-toggler fa-solid fa-bars text-white border-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </i>
+            <div class="collapse navbar-collapse list rounded-4 justify-content-end" id="navbarNav">
+                <ul class="navbar-nav d-flex align-items-center gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link rounded-5 py-1 text-white active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-5 py-1 text-white" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-5 py-1 text-white" href="#">Live Camera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-5 py-1 text-white" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-5 py-1 text-white" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="main-sec pb-4">
+        <div class="container-fluid container-md">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="mt-4 position-relative search">
+                        <input id="searchInput" type="text" class="w-100 searchInput rounded-4"
+                            placeholder="Find Your Location...">
+                        <div class="position-absolute top-50 end-0 me-1">
+                            <button class="btn px-lg-5 rounded-4 text-white">Find</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 today-forcast pe-lg-0">
+                    <div class="main-card text-center text-white rounded-start-3 overflow-hidden">
+                        <div class="head-card opacity-75 p-2 d-flex justify-content-between">
+                            <span class="today-date-day-name"></span>
+                            <div>
+                                <span class="today-date-day-number"></span>
+                                <span class="today-date-day-month"></span>
+                            </div>
+                        </div>
+                        <div class="body-card text-star">
+                            <div class="today-location pt-3 pt-lg-4 fw-medium opacity-75 h5"></div>
+                            <div class="today-temp fw-bold"></div>
+                            <div class="img-container">
+                                <img class="today-img img-forcast" src="" alt="">
+                            </div>
+                            <div id="today-condition-text" class="mb-4 condition"></div>
+                            <div class="spans pb-4">
+                                <img src="images/icon-umberella.png" alt="">
+                                <span class="opacity-75 pe-3 humidity"></span>
+                                <img src="images/icon-wind.png" alt="">
+                                <span class="opacity-75 pe-3 wind"></span>
+                                <img src="images/icon-compass.png" alt="">
+                                <span class="opacity-75 wind-direction"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 next-day today-forcast px-lg-0">
+                    <div class="main-card text-center text-white">
+                        <div class="head-card p-2 opacity-75">
+                            <span class="next-day-name"></span>
+                        </div>
+                        <div class="body-card d-flex flex-column align-items-center">
+                            <img class="img-forcast next-condition-img mt-5" src="" alt="">
+                            <div class="fs-3 fw-bold next-max-temp"></div>
+                            <div class="pb-3 fs-6 fw-normal opacity-75 next-min-temp"></div>
+                            <div class="next-condition-text condition"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 third-day today-forcast ps-lg-0">
+                    <div class="main-card text-center text-white rounded-end-3 overflow-hidden">
+                        <div class="head-card p-2 opacity-75">
+                            <span class="next-day-name"></span>
+                        </div>
+                        <div class="body-card d-flex flex-column align-items-center">
+                            <img class="img-forcast next-condition-img mt-5" src="" alt="">
+                            <div class="fs-3 fw-bold next-max-temp"></div>
+                            <div class="pb-3 fs-6 fw-normal opacity-75 next-min-temp"></div>
+                            <div class="next-condition-text condition"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-3">
+        <div class="container-fluid container-md">
+            <div class="row">
+                <div class="col-12">
+                    <div class="">
+                        <ul class="d-flex justify-content-lg-center gap-3 p-2 p-lg-0">
+                            <li class="list-unstyled">
+                                <i class="fa-brands fa-xl fa-facebook"></i>
+                            </li>
+                            <li class="list-unstyled">
+                                <i class="fa-brands fa-xl fa-twitter"></i>
+                            </li>
+                            <li class="list-unstyled">
+                                <i class="fa-brands fa-xl fa-youtube"></i>
+                            </li>
+                            <li class="list-unstyled">
+                                <i class="fa-brands fa-xl fa-google"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copy-right text-white opacity-75 text-center">
+                    Copyright 2014 Company name. Designed by Themezy. All rights reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Js/all.min.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/index.js"></script>
+</body>
+
+</html>
